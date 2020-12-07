@@ -1,0 +1,45 @@
+﻿@model QuizTools
+
+    @{ ViewData["Title"] = "Quiz";
+    }
+ 
+
+<div>
+    <h1 class="display-4">La Quiz</h1>
+    <form method="post" class="container">
+        <label asp-for="Season" class="control-label">season</label>
+        <input asp-for="Season" type="text" class="form-control pb-1" />
+
+        <label asp-for="Type" class="control-label">type</label>
+        <input asp-for="Type" type="text" class="form-control pb-1" />
+
+        <label asp-for="Moisture" class="control-label">moisture</label>
+        <input asp-for="Moisture" type="text" class="form-control pb-1" />
+
+
+        <label asp-for="Foilage" class="control-label">foilage</label>
+        <input asp-for="Foilage" type="text" class="form-control pb-1" />
+
+        <label asp-for="Fertilizer" class="control-label">fertilizer</label>
+        <input asp-for="Fertilizer" type="text" class="form-control pb-1" />
+
+        <label asp-for="Sunlight" class="control-label">sunlight</label>
+        <input asp-for="Sunlight" type="text" class="form-control pb-1" />
+
+        <label asp-for="Parasites" class="control-label">parasites</label>
+        <input asp-for="Parasites" type="text" class="form-control pb-1" />
+
+
+        @*@<p>@Model?.RightOrWrong3</p>*@
+        <br />
+
+        <br />
+        <input type="submit" class="form-control btn" />
+    </form>
+
+    <label asp-for="Score" class="control-label">Score</label>
+    <label class="control-label">@Model.Score</label>
+    
+
+
+</div>

@@ -1,0 +1,18 @@
+﻿@model List<ForumModel>
+@{
+    ViewData["Title"] = "Forum";
+}
+
+<h2>Welcome to the forum darling.</h2>
+@foreach (ForumModel post in Model) 
+{ 
+        <strong>Title: </strong><br />
+        @post.Title<br />
+        <strong>Name:</strong><br />
+        @post.F_user.Name<br />
+        <strong>Quiz Score:</strong><br />
+        @post.F_score <br />
+        <strong>Text:</strong><br />
+        @post.Text<br />
+
+}
