@@ -73,19 +73,19 @@ namespace FinalProject
                 //save
                 context.SaveChanges();
             }
-            else if (!context.QuizUser.Any())
+            
+             if (!context.QuizUser.Any())
             {
                 //instantiate model 
-                var quiz = new QuizModel();
+                var quser = new QuizModel();
                 //seed data
-                var quizuser = quiz.Seed();
+                var quizseed = quser.Seed();
                 //add full list to user context
-                context.QuizUser.AddRange(quizuser);
+                context.QuizUser.AddRange(quizseed);
             }
-            else
-            {
-                
-            }
+            
+            
+           
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();

@@ -25,22 +25,21 @@ namespace FinalProject.Models
         [NotMapped]
         public int Score { get; set; }
 
-
-       /* public List<QuizTools> Seed()
+        /*
+       public List<QuizTools> Seed()
             //be sure to call in startup <3
         {
             //seeded data inside where its own model lives.
             //instantiate new list of type model
             var rec = new List<QuizTools>();
             //add records to list.
-            rec.Add(new QuizTools() { Parasites = "No"});
-            rec.Add(new QuizTools() { Season = "Fall"});
-            rec.Add(new QuizTools() { Season = "Winter"});
-            rec.Add(new QuizTools() { Season = "Spring"});
+            rec.Add(new QuizTools() { QuizToolId=1,Season = "Winter",Type="Tree"});
+            
             //return list
             return rec;
         }
-       */
+        */
+       
 
     }
 }

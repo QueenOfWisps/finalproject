@@ -32,7 +32,7 @@ namespace FinalProject.Controllers
             var quizModel = new QuizModel();//new instance of quiz model.
             if (model.Season == "winter")
             {
-                quizModel.QuizToolInstance = model;// accessing the data entered from quiztools instancw. 
+                quizModel.QuizToolInstance = model;// accessing the data entered from quiztools instance. 
                 // from the quiz model.
                 quizModel.Score = 5;// change score. replace score with int in own table.
             }
